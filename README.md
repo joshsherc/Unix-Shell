@@ -19,4 +19,7 @@ If chdir() returns an error, display an error message.
 You do not need to support ~ for the home folder, or changing to the home folder with "cd".
 If the user presses enter on an empty line, do nothing (much like a normal Linux terminal). Plus change the prompt to include the current working directory. For example, if in the /home/cmpt300student folder, the prompt should be:
 
- a history feature that allows the user access up to the ten most recently entered commands. Start numbering the user's commands at 1 and increment for each command entered. These numbers will grow past 10. For example, if the user has entered 35 commands, then the most recent ten will be numbered 26 through 35. This history feature will be implementing using a few different techniques.
+A history feature that allows the user access up to the ten most recently entered commands. Start numbering the user's commands at 1 and increment for each command entered. These numbers will grow past 10. For example, if the user has entered 35 commands, then the most recent ten will be numbered 26 through 35. This history feature will be implementing using a few different techniques.
+
+
+Display the list of history commands when the user presses ctrl-c (which is the SIGINT signal). 
