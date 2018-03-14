@@ -4,11 +4,16 @@ A simple UNIX shell. The shell accepts user commands and then executes each comm
 
 Internal commands are commands that the shell itself implement, as opposed to a separate program that is executed. Implement the commands listed below. Note that for these you need not fork a new process as they can be handled directly in the parent process.
 
-  exit
+exit
+  
 Exit the program. Does not matter how many arguments the user enters; they are all ignored.
-  pwd
-Display the current working directory. Use getcwd() function. Run man getcwd for more. Ignore any extra arguments passed by the user.
-  cd
+
+pwd
+  
+Displaythe current working directory. Use getcwd() function. Run man getcwd for more. Ignore any extra arguments passed by the user.
+  
+cd
+  
 Change the current working directory. Use chdir() function. Pass chdir() the first argument the user enters (it will accept absolute and relative paths). Ignore any extra arguments passed by the user.
 If chdir() returns an error, display an error message.
 You do not need to support ~ for the home folder, or changing to the home folder with "cd".
